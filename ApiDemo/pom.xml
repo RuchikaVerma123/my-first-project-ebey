@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>APIAutomationDemo</groupId>
+  <artifactId>ApiDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+    <!-- Dependency for JSON parsing -->
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20210307</version>
+    </dependency>
+
+    <!-- Dependency for TestNG (for assertions and validation) -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.4.0</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+    <scope>compile</scope>
+	</dependency>
+
+
+    <!-- Dependency for Selenium WebDriver (for any UI-related automation, optional) -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.5.0</version>
+    </dependency>
+    
+    <dependency>
+    	<groupId>ebeySeleniumDemo</groupId>
+    	<artifactId>ebeyDemo</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+ 
+  </dependencies>
+
+</project>
