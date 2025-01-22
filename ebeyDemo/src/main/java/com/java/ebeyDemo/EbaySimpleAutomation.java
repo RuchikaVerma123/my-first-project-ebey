@@ -18,21 +18,21 @@ public class EbaySimpleAutomation {
 		// maximize window
 		driver.manage().window().maximize();
 		// Search for 'book'
-		System.out.println("test**************");
-		WebElement searchBox = driver.findElement(By.xpath("//*[@id='gh-ac']")); 
+
+		WebElement searchBox = driver.findElement(By.xpath("//*[@id='gh-ac']"));
 		searchBox.sendKeys("book");
-		System.out.println("test1");
+
 		WebElement searchButton = driver.findElement(By.id("gh-search-btn"));
 		searchButton.click();
-		System.out.println("test2");
+
 		// Click on the first book in the search result
 		WebElement firstBook = driver.findElement(By.xpath("(//li[@class='s-item'])[1]//a"));
 		firstBook.click();
-		System.out.println("test3");
+
 		// Click the 'Add to cart' button
 		WebElement addToCartButton = driver.findElement(By.id("atcRedesignId_btn"));
 		addToCartButton.click();
-		System.out.println("test4");
+
 		// Get the cart count and verify it
 		WebElement cartIcon = driver.findElement(By.id("gh-cart-n"));
 		String cartCount = cartIcon.getText();
